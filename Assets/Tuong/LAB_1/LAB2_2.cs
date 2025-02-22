@@ -35,11 +35,11 @@ public class LAB2_2 : MonoBehaviour
         for(float i = 0; i < fadeDuration; i += Time.deltaTime)
         {
             float normalizedTime = i / fadeDuration;
-            color.a = Mathf.Lerp(startAlpha,0.2f, normalizedTime);
+            color.a = Mathf.Lerp(startAlpha,0, normalizedTime);
             objectMaterial.color = color;
             yield return new WaitForEndOfFrame();
         }
-        color.a = 0.2f;
+        color.a = 0;
         objectMaterial.color = color;
         isFading = false;   
     }
