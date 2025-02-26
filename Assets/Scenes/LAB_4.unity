@@ -682,14 +682,23 @@ VisualEffect:
         m_Name: Spawn_rate
         m_Overridden: 1
     m_Vector2f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 1, y: 8}
+        m_Name: Lifetime
+        m_Overridden: 1
     m_Vector3f:
       m_Array:
       - m_Value: {x: 0, y: 3, z: 0}
         m_Name: Spawn>volume_center
-        m_Overridden: 0
+        m_Overridden: 1
       - m_Value: {x: 10, y: 5, z: 5}
         m_Name: Spawn>volume_size
+        m_Overridden: 1
+      - m_Value: {x: 0, y: -0.07, z: 0}
+        m_Name: Initial_Velocity
+        m_Overridden: 1
+      - m_Value: {x: 36.35, y: -2.5, z: 0}
+        m_Name: Gravity_Force
         m_Overridden: 0
     m_Vector4f:
       m_Array: []
@@ -716,7 +725,7 @@ Transform:
   m_GameObject: {fileID: 685529561}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 289.9, y: 277.52, z: 535.59}
+  m_LocalPosition: {x: 289.9, y: 281.8, z: 535.59}
   m_LocalScale: {x: 2, y: 3, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1309,7 +1318,7 @@ Transform:
   m_GameObject: {fileID: 1979260087}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 289, y: 305, z: 536.3}
+  m_LocalPosition: {x: 286.2, y: 308.3, z: 536.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5741,8 +5750,8 @@ SceneRoots:
   - {fileID: 2060746690}
   - {fileID: 175575638718098806}
   - {fileID: 2114377659}
-  - {fileID: 751941344}
   - {fileID: 1317255110}
+  - {fileID: 751941344}
   - {fileID: 685529564}
   - {fileID: 1949645370}
   - {fileID: 2107430607}
